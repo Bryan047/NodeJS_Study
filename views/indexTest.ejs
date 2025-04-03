@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- <h1>hello ejs engine</h1>
+    <p> ชื่อ: <%= name %></p>
+    <h2>อายุ: <%= age %></h2>                        
+    <%- address %>
+    <hr>
+     ================ถ้าอายุไม่ถึงเกณ ให้แสดงข้อความด้านล่าง=================== -->
+    <!-- <% if (age >= 18) { %>                             
+        <h1>ผ่านเกณการใช้งาน ยินดีต้อนรับ</h1>                
+    <% } else { %>
+        <h1>ไม่ผ่านเกณฑ์การใช้งาน เสียใจด้วย</h1>
+    <% } %>
+    <hr> -->
+     <!-- ================การใช้งาน loop =================== -->
+        <!-- <%  for(i=1; i<= 10; i++) {  %>
+            <p>ลำดับที่ <%= i %> </p>
+        <% } %> --> 
+
+        <!-- ====================Array=================== -->
+         <%= products %> <br>
+        <ol>
+         <!-- <% for(i=0;i<products.length;i++){%>
+            <li><%= products[i] %>   </li>
+        <% } %> -->
+
+         <!-- <% for(index in products){%>
+            <li><%= products[index] %>   </li>
+        <% } %>
+        </ol>
+         -->
+        <!-- ===============object================ -->
+        <!-- <% Object.values(products).forEach(function(item){ %>
+            <img src="<%= item.image %>" alt="">
+            <p>ชื่อ: <%= item.name %></p> 
+            <p>ราคา: <%= item.price %></p><hr>
+        <% }) %> -->
+</body>
+</html>
